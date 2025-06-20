@@ -35,7 +35,7 @@ mtb_data = preProcess(IDs = IDs,B = B,N = N,K = K,COMD.column = "CHEMICAL_ID")
 ## Implement the annotation function
 Implement the annotation function by randomly selecting 20 metabolites for calibration. Generate 20 Gibbs samples, discarding the first 10 iterations as burn-in. It is recommended to run 100 iterations and 50 burn-in for real annotation tasks (Iter = 100, burnin = 50).
 ```{r}
-test = metabAnnotate(mtb_data = mtb_data,size.clbr = 20,Iter = 20,burn.in = 10,new.pathway = F,seed = 1)
+test = metabAnnotate(mtb_data = mtb_data,size.clbr = 20,Iter = 20,burnin = 10,new.pathway = F,seed = 1)
 ```
 
 Check the annotation results.
