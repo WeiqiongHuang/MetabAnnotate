@@ -13,7 +13,7 @@ We recommend use BEMA for raw data, and dBEMA for summary-level data.
 
 The BEMA function is part of the package and was downloaded from the GitHub repository maintained by ZhengTracyKe, available at: https://github.com/ZhengTracyKe/BEMA.
 ```
-Y.copy = na.omit(Y)#remove rows including NAs in Y
+Y.copy = na.omit(Y)# remove rows including NAs in Y
 K = BEMA(data = t(Y.copy),n = ncol(Y.copy),p = nrow(Y.copy),alpha = 0.1)
 ```
 The dBEMA function is part of the package and was obtained from the GitHub repository maintained by Weiqiong Huang, available at: https://github.com/WeiqiongHuang/HiGSS.
